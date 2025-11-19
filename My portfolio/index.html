@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>my Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="images/favicon-32x32.png" />
+</head>
+<body>
+  <!-- NAV -->
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="#" class="logo">Tsion</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO / HOME -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1>Hi, I'm <span class="accent">Tsion</span></h1>
+        <p class="lead">
+            I’m a student with a strong interest in technology and software development. I’m passionate about learning new technologies, improving my skills.
+        </p>
+        
+        <div class="hero-cta">
+          <a class="btn" href="#projects">See my work</a>
+          <a class="btn ghost" href="#contact">Get in touch</a>
+        </div>
+      
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about">
+    <div class="container">
+      <h2 class="section-title">About me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I’m currently learning web development and have a solid understanding of the basics, including HTML, CSS, and JavaScript. I enjoy practicing by building small projects and expanding my knowledge every day. My love for learning continuously inspires me to improve my skills, whether I’m coding new projects, exploring innovative technologies, or experimenting with frameworks and libraries like React, Vue, or Node.js. I’m passionate about creating user-friendly and visually appealing web experiences, and I actively seek opportunities to understand best practices in responsive design, accessibility, and performance optimization. I also enjoy collaborating with others, sharing knowledge, and contributing to open-source projects to grow both technically and professionally.
+          </p>
+
+          <h2>Skills</h2>
+          
+          <ul class="skills">
+            <li> Basic HTML & CSS</li><br>
+            <li>JavaScript</li>
+            
+        
+        </ul>
+        </div>
+        <div class="about-stats">
+          <div class="stat">
+            <strong>2+</strong>
+            <span>Projects</span>
+          </div>
+          <div class="stat">
+            <strong>100%</strong>
+            <span>Committed to learning</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <h2 class="section-title">Selected Projects</h2>
+      <div class="projects-grid">
+        <!-- Project card 1 -->
+        <article class="project-card">
+         <div class="project-body">
+          <img src="https://tse2.mm.bing.net/th/id/OIP.X_AECsM5VVym8qPePyQhGQAAAA?pid=Api&P=0&h=220" alt="Project One-TBGH Screenshot" class="project-image" />
+    
+            <h3>Project One-TBGH</h3>
+            <p>“The TBGH website provides essential information about the hospital's services, projects, and community involvement. Key features include an FAQ section, contact information, and details about ongoing projects. It aims to enhance patient engagement and accessibility, serving as a valuable resource for patients and their families.”</p>
+            <div class="project-links">
+              
+              
+            </div>
+          </div>
+        </article>
+
+        <!-- Project card 2 -->
+        <article class="project-card">
+          <div class="project-body">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.0ze5CZtbk7S9-AKnDSneigHaDt?pid=Api&P=0&h=220" alt="Project Two-Movie Station Screenshot" class="project-image" />
+            <h3>Project Two-movie station</h3>
+            <p>The Movie Station website is a dynamic platform for film enthusiasts, offering information on the latest releases, reviews, and trailers. Key features include a searchable database of movies, user reviews, and a community forum. It aims to connect film lovers and provide a comprehensive resource for all things cinema.”</p>
+            
+            <div class="project-links">
+              
+              
+            </div>
+          </div>
+        </article>
+
+        <!-- Add more project-cards as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-grid">
+        <form id="contactForm" class="contact-form" action="javascript:void(0);">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" required />
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="6" required></textarea>
+          </label>
+          <button class="btn" type="submit">Send message</button>
+          <p id="formMessage" class="form-message" aria-live="polite"></p>
+        </form>
+
+        <div class="contact-info">
+          <h3>Let's work together</h3>
+          <p>Email: <a href="mailto:email">tsionabraham@gmail.com</a></p>
+          <p>Location: Addis Ababa, Ethiopia</p>
+          <p>
+            Social:
+            <a href="#" target="blank" rel="noopener">GitHub</a> •
+            <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> My portfolio · Built with ♥</p>
+      <a href="#home" class="back-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
